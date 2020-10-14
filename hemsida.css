@@ -2,7 +2,7 @@
 body {
   display: grid ;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100px 800px 800px;
+  grid-template-rows: 250px 800px 800px;
   grid-template-areas: 
     "header header header header"
     "main main main main"
@@ -10,18 +10,34 @@ body {
   
 }  
 .item-a {
+  
   display:inline-grid;
-  grid-template-columns: 25% auto auto auto auto auto 25%;
-  grid-template-rows: 100px;
   grid-area: header;
+  grid-template-rows: 150px 100px ;
   background-image: linear-gradient(#337509,#5ea333,#2d7500);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  
 }
 
-.item-a div{ 
-  
+.item-a ul{ 
+  display: grid;
+  grid-template-columns:repeat(7, 1fr);
+  list-style-type:none;
+  grid-column: 1 / 2;
+  border: 2px solid red;
   padding:1rem;
   text-align:center;
+  background-image: radial-gradient(red, yellow, green);
+}
+
+div header{ 
+  text-align:center;
+  font-size:50px;
+  font-style: oblique
+}
+
+div{
+  display: grid;
+  grid-template-rows: 50px 100px ;
 }
 
 .container {
