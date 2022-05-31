@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="teknik.css" rel="stylesheet">
+      <title>översikt</title>
+   </head>
+   <body>
+      <!--div countainer 1 för griden-->
+      <div class="container1" role="grid">
+         <header>
+            <h1>Översikt</h1>
+         </header>
+         <nav>
+            <ul class="länkar">
+               <li>
+                  <a href="index.html">Hem</a>
+               </li>
+               <li>
+                  <a href="översikt.html">Översikt</a>
+               </li>
+               <li>
+                  <a href="tekniker.html">Tekniker</a>
+               </li>
+               <li>
+                  <a href="uppfinningar.html">Uppfinningar</a>
+               </li>
+               <li>
+                  <a href="omoss.html">Om oss</a>
+               </li>
+               <li>
+                  <a href="feedback.html">Utvärdering</a>
+               </li>
+            </ul>
+         </nav>
+         <aside>
+		    <!--lokala meny-->
+			<ul>
+               <li><a href="1a.html">1:a industriella revolutionen</a></li>
+			   <li><a href="2a.html">2:a industriella revolutionen</a></li>
+			   <li><a href="3e.html">3:e industriella revolutionen</a></li>
+			   <li><a href="4e.html">4:e industriella revolutionen</a></li>
+			</ul>
+         </aside>         
+		 <main>
+		    <!--rubrik-->
+            <h2>Teknikutveckling</h2>
+			<!--beskrivning-->
+            <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+         </main>
+         <section>
+		    <!--HTML5 video-->
+            <div class="player">
+               <video controls>
+			      <source src="../bilder/videoplayback.mp4" type="video/mp4">
+				  <source src="../bilder/videoplayback.mp4" type="video/webm">
+				  <!-- fallback content here -->
+			   </video>
+			   <!--knappar som styra video spelare-->
+			   <div class="controls">
+                  <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+			      <button class="stop" data-icon="S" aria-label="stop"></button>
+				  <!--tid räknare-->
+                  <div class="timer">
+                     <div></div>
+                     <span>00:00</span>
+                  </div>
+                  <button class="rwd" data-icon="B" aria-label="rewind"></button>
+                  <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+               </div>
+            </div>
+			<!--en JavaScript fil för att styra knappar-->
+            <script src="custom-player.js"></script>
+            <h3>En kort video!!!</h3>
+			<svg height="130" width="500">
+				<ellipse cx="100" cy="70" rx="55" ry="50" fill="#5BCFB8">
+				</ellipse>
+			</svg>
+         </section>
+         <footer>
+         </footer>
+      </div>
+   </body>
+</html>
