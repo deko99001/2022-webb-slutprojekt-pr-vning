@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="teknik.css" rel="stylesheet">
+      <title>utvärdering</title>
+   </head>
+   <body>
+      <!--div countainer för griden-->
+      <div class="container" role="grid"> 
+         <header>
+            <h1>Utvärdering</h1>
+         </header>
+         <nav>
+            <ul class="länkar">
+               <li>
+                  <a href="index.html">Hem</a>
+               </li>
+               <li>
+                  <a href="översikt.html">Översikt</a>
+               </li>
+               <li>
+                  <a href="tekniker.html">Tekniker</a>
+               </li>
+               <li>
+                  <a href="uppfinningar.html">Uppfinningar</a>
+               </li>
+               <li>
+                  <a href="omoss.html">Om oss</a>
+               </li>
+               <li>
+                  <a href="feedback.html">Utvärdering</a>
+               </li>
+            </ul>
+         </nav>
+		 <aside>
+		 </aside>
+		 <main>
+		    <!--rubrik för formulär-->
+            <h2>Lämna in din feedback för att vi kan förbättra oss!</h2>
+			<!--formulär skckas till serven med hjälp av post metod-->
+            <form action="tack.html" method="post">
+			   <!--filedset element används för att gruppera formulärkontroller-->
+			   <fieldset>
+			      <!--en box med kantlinje skapas-->
+                  <legend>Här skriva du din personlig information</legend>
+				  <div>
+				     <!--här fylls användares namn-->
+				     <label for="fname">First name:</label><br>
+				     <input type="text" id="fname" name="fname"><br>
+				     <label for="lname">Last name:</label><br>
+				     <input type="text" id="lname" name="lname">
+				  </div>
+				  <div>
+				     <!--här fylls användares kön-->
+			         <label for="Gender">Kön:</label>
+				     <select id="Gender" name="selection">
+				        <option value="1">Man</option>
+					    <option value="2">Kvinna</option>
+					    <option value="3">Annat</option>
+				     </select>
+				  </div>
+				  <div>
+				     <!--här fylls användares email,password i gmail form-->
+				     <label for="email">Email address(gmail.com)</label><br>
+				     <input type="email" id="email" name="mail" pattern=".+@gmail\.com" value="" required><br>
+				     <label for="password">Password</label><br>
+				     <input type="password" id="password" name="lösnord">
+				  </div>
+			   </fieldset>
+               <!--en annan grupp av formulär-->			   
+			   <fieldset>
+			      <legend>Här har vi några frågor kring din årsikter.</legend>
+			      <!--textruta till övriga frågor-->
+				  <div>
+				     <label for="Opinion">Har du frågor kring oss?</label><br>
+				     <textarea name="opinion" id="Opinion"></textarea>
+				  </div>
+				  <!--checkbox-->
+				  <div>
+				     <label>Är du nöjd med sidan?</label><br>
+					 <input type="checkbox" id="ja" name="checkbox" value="Yes">
+					 <label for="ja">Ja</label><br>
+					 <input type="checkbox" id="nej" name="checkbox" value="No">
+					 <label for="nej">Nej</label>
+				  </div>
+				  <!--radio-->
+				  <div>
+				     <label>Favoritfärg:</label>
+					 <input type="radio" id="black" name="radio" value="Black">
+					 <label for="black">Black</label><br>
+					 <input type="radio" id="white" name="radio" value="White">
+					 <label for="white">White</label><br>
+					 <input type="radio" id="gray" name="radio" value="Gray">
+					 <label for="gray">Gray</label><br>
+					 <input type="radio" id="else" name="radio" value="Else">
+					 <label for="else">Or else</label>	
+					 <input type="color" id="färg" name="färg" value="#e66465">	
+				  </div>
+				  <!--bilder kan bifogas-->
+				  <div>
+				     <label for="bild">Bifoga</label>						   
+				     <input type="file" id="bild" name="fil" accept="image/png, image/jpeg">
+				  </div>
+			   </fieldset>
+			   <!--"skicka" knapp-->
+			   <button type="submit" name="button"><img src="../bilder/send.png" alt="sendbutton" class="skicka">skicka</button>                        							                              							
+            </form>
+         </main>
+         <footer>
+         </footer>
+      </div>
+   </body>
+</html>
